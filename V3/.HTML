@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página Similar a LinkedIn Parcial 1</title>
+    <style>
+        
+     
+        .header {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 0 0 200px; /* Ancho fijo para la barra lateral izquierda */
+        }
+
+        .center-content {
+            flex: 1; /* Toma el espacio restante */
+            margin: 0 20px;
+        }
+
+        
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .link-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 10px;
+        }
+
+        .link-button:hover {
+            background-color: #2980b9;
+        }
+
+        .icon-img {
+            width: 20px;
+            height: auto;
+        }
+    </style>
+    <nav style="display: flex; justify-content: space-around; align-items: center; padding: 10px 20px; background-color: #f8f8f8; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <div class="logo">
+            <a href="#">
+                <img src="Iconos/LIN.png" alt="Logo" style="width: 30px; height: auto;">
+            </a>
+        </div>
+
+        <div class="search-bar" style="margin-right: 2rem; width: 300px;">
+            <input type="text" placeholder="Buscar" style="padding: 5px;">
+        </div>
+
+        <div class="nav-links" style="display: flex; align-items: center;">
+            <button style="margin: 0 1rem;">
+                <span><img src="Iconos/hogar.png" alt="Inicio" style="width: 20px; height: auto;"></span>
+                Inicio
+            </button>
+            <button style="margin: 0 1rem;">
+                <span><img src="Iconos/usuarios-alt.png" alt="Mi red" style="width: 20px; height: auto;"></span>
+                Mi red
+            </button>
+            <button style="margin: 0 1rem;">
+                <span><img src="Iconos/maletin.png" alt="Empleos" style="width: 20px; height: auto;"></span>
+                Empleos
+            </button>
+            <button style="margin: 0 1rem;">
+                <span><img src="Iconos/comentario-alt-medio.png" alt="Mensajes" style="width: 20px; height: auto;"></span>
+                Mensajes
+            </button>
+            <button style="margin: 0 1rem;">
+                <span><img src="Iconos/campana.png" alt="Notificaciones" style="width: 20px; height: auto;"></span>
+                Notificaciones
+            </button>
+            <button style="margin: 0 1rem;">
+                <span><img src="Imagenes/WhatsApp Image 2023-10-05 at 23.37.54.jpeg" alt="Yo" style="width: 20px; height: auto;"></span>
+                Yo
+            </button>
+            <button style="margin: 0 1rem;">
+                <span><img src="Iconos/menu-hamburguesa.png" alt="Más" style="width: 20px; height: auto;"></span>
+                Más
+            </button>
+        </div>
+    </nav>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <!-- Contenido del encabezado, como logo, barra de búsqueda y enlaces -->
+       
+    </header>
+
+    <!-- Contenido Principal -->
+    <div class="main-content">
+        <!-- Lateral Izquierdo -->
+        <div class="sidebar">
+            <div class="user-profile">
+                <!-- Contenido de la foto de perfil y usuario -->
+                <img src="Imagenes/WhatsApp Image 2023-10-05 at 23.37.54 (2).jpeg" alt="Foto de perfil" style="width: 170px; height: auto;" class="profile-picture">
+                <div class="user-info">
+                    <h2 class="user-name"><li>Alexander Calambas Ramirez</li></h2>
+                    <p class="user-occupation"><li>Estudiante de Ingenieria Multimedia</li></p>
+                    <div class="stats">
+                        <p class="views">1,234 vistas</p>
+                        <p class="impressions">5,678 impresiones</p>
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+                <!-- Botones y enlaces de la barra lateral -->
+                <button class="link-button">
+                    <span class="icon"><img src="Iconos/gorro-de-graduacion.png" alt="Icono Metas Profesionales" style="width: 20px; height: auto;" class="icon-img"></span>
+                    Metas profesionales
+                </button>
+                <button class="link-button">
+                    <span class="icon"><img src="Iconos/estrellas.png" alt="Icono Insignias" style="width: 20px; height: auto;" class="icon-img"></span>
+                    Insignias
+                </button>
+                <button class="link-button">
+                    <span class="icon"><img src="Iconos/MIRED.png" alt="Icono Grupos" style="width: 20px; height: auto;" class="icon-img"></span>
+                    Grupos
+                </button>
+            </div>
+        </div>
+
+        <!-- Contenido Central -->
+        <div class="center-content">
+            <div id="publicacion">
+                <div class="section">
+                    <div class="photo">
+                        <img src="Imagenes/WhatsApp Image 2023-10-05 at 23.37.54.jpeg" alt="foto de perfil"style="width: 20px; height: auto;" width="100%">
+                    </div>
+                    <div class="text">
+                        <form class="public-box">
+                            <input type="text" placeholder="  Crear publicación"style="width: 100px; height: auto;">
+                        </form>
+                    </div>
+                </div>
+                    <div class="botones">
+                        <button><img src="Iconos/sensor-de-humo.png" alt="Multimedia" style="width: 20px; height: auto;"><a>Contenido multimedia</a> </button>
+                        <button><img src="Iconos/calendario-lineas-boligrafo.png" alt="Evento" style="width: 20px; height: auto;"><a>Evento</a></button>
+                        <button><img src="Iconos/mayuscula.png" alt="Escribir artículo" style="width: 20px; height: auto;"><a>Escribir artículo</a></button>
+                    </div>
+            </div>
+
+        </div>
+
+        <div id="bar5">
+            <div class="text1">
+                <strong>  Añadir a ti feed<span class="left-text">ℹ️</span></strong>
+                </div>
+            <div class="section">
+                <div class="photo">
+                    <img src="img/starged.jpg" alt="" width="100%">
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><strong>Starged Studio</strong></li>
+                        <li><a>Empresa</a></li>
+                        <li><a>Efectos Post-production</a></li>
+                            <li><button> + SEGUIR </button></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="section">
+                <div class="photo">
+                    <img src="img/señor.jpg" alt="" width="100%">
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><strong>Victor Ramirez</strong></li>
+                        <li><a>Developer backend</a></li>
+                            <li><button> + SEGUIR </button></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="section">
+                <div class="photo">
+                    <img src="img/col.png" alt="" width="100%">
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><strong>Colegio Santa Monica</strong></li>
+                        <li><a>Institucion - Empresa </a></li>
+                            <li><button> + SEGUIR </button></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="text">
+                <a>Ver todas las recomendaciones  ➜</a>
+            </div>
+        </div>
+        <div class="right-sidebar">
+           
+        </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+        LinkedIn Corporation
+    ATTN: Copyright Agent
+    Legal Department
+    1000 West Maude Avenue
+Sunnyvale, CA 94085
+EE. UU.
+    </footer>
+
+</body>
+</html>
